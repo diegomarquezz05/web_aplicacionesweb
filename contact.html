@@ -84,22 +84,6 @@
                     <span class="h1 text-uppercase text-dark bg-primary px-2 ml-n1">Shop</span>
                 </a>
             </div>
-            <div class="col-lg-4 col-6 text-left">
-                <form action="">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Buscar productos">
-                        <div class="input-group-append">
-                            <span class="input-group-text bg-transparent text-primary">
-                                <i class="fa fa-search"></i>
-                            </span>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="col-lg-4 col-6 text-right">
-                <p class="m-0">Atención al cliente</p>
-                <h5 class="m-0">+012 345 6789</h5>
-            </div>
         </div>
     </div>
     <!-- Topbar End -->
@@ -155,6 +139,7 @@
                                 </div>
                             </div>
                             <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                            <a href="ordenada.html" class="nav-item nav-link">Lista ordenada y desordenada</a>
                         </div>
                         <div class="navbar-nav ml-auto py-0 d-none d-lg-block">
                             <a href="" class="btn px-0">
@@ -190,12 +175,12 @@
 
     <!-- Contact Start -->
     <div class="container-fluid">
-        <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3">Contact Us</span></h2>
+        <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3">MANDA TU SUGERENCIA</span></h2>
         <div class="row px-xl-5">
             <div class="col-lg-7 mb-5">
                 <div class="contact-form bg-light p-30">
                     <div id="success"></div>
-                    <form nethod="post" action="http://endor.josedomingo.org/josedom/resultado.php">
+                    <form action="http://endor.josedomingo.org/josedom/resultado.php" method="post">
                         <div class="control-group">
                             <input type="text" class="form-control" name="nombre" placeholder="Tu nombre"
                                 required="required" data-validation-required-message="Por favor ingrese su nombre" />
@@ -211,35 +196,7 @@
                                 required="required" data-validation-required-message="Ingrese el nombre del producto" />
                             <p class="help-block text-danger"></p>
                         </div>
-                        <div class="control-group">
-                            <div class="pr-3">
-                                <label for="checkout"><h2>Tipo de venta</h2></label>
-                            </div>
-                            <input type="radio" name="checkout_ropa" class="form-control"/>Ropa<br/>
-                            <input type="radio" name="checkout_objeto" class="form-control"/>Objeto<br/>
-                            <input type="radio" name="checkout_informatica" class="form-control"/>Informatica<br/>
-                        </div>
-                        <div class="control-group">
-                            <div class="pr-3">
-                                <label for="precio"><h2>Rango de Precio (0-1000€)</h2></label>
-                            </div>
-                            <input type="range" class="form-control" name="precio"
-                                required="required" data-validation-required-message="Ingrese el precio" />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div>   
-                            <div class="pr-2"
-                                <label for="porque"><h2>Porque quieres venderlo</h2></label>
-                            </div>
-                            <select name="Porque">
-                                <optgroup label="Porque">
-                                    <option>Necesidades</option>
-                                    <option>No me quedo bien</option>
-                                    <option>No me gusto</option>
-                                </optgroup>
-                            </select>   
-                        </div>
-                        <div class="control-group">
+						<div class="control-group">
                             <input type="text" class="form-control" name="numero" placeholder="Tu numero de telefono"
                                 required="required" data-validation-required-message="Por favor ingrese su telefono" />
                             <p class="help-block text-danger"></p>
@@ -249,6 +206,32 @@
                                 required="required" data-validation-required-message="Por favor ingrese su domicilio" />
                             <p class="help-block text-danger"></p>
                         </div>
+                        <div class="control-group">
+                            <div class="pr-3">
+                                <h2>Tipo de Venta</h2>
+                            </div>
+                            <input type="radio" value="check_ropa" name="checkout"/>Ropa<br/>
+                            <input type="radio" value="check_objeto" name="checkout"/>Objeto<br/>
+                            <input type="radio" value="check_informatica" name="checkout"/>Informatica<br/>
+                        </div>
+                        <div class="control-group">
+                            <div class="pr-3">
+                                <h2>Rango de Precio (0-1000€)</h2>
+                            </div>
+                            <input type="range" class="form-control" name="precio">
+                        </div>
+                        <div>   
+                            <div class="pr-2">
+                                <h2>Porque quieres venderlo</h2>
+                            </div>
+                            <select name="Porque">
+                                <optgroup label="Porque">
+                                    <option>Necesidades</option>
+                                    <option>No me quedo bien</option>
+                                    <option>No me gusto</option>
+                                </optgroup>
+                            </select>   
+                        </div>             
                         <div>   
                             <button class="btn btn-primary py-2 px-4" type="submit" id="sendMessageButton">Mandar sugerencia</button>
 
@@ -283,35 +266,7 @@
                             <a class="text-secondary mb-2" href="checkout.html"><i class="fa fa-angle-right mr-2"></i>Forma de pago</a>
                             <a class="text-secondary" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contacto</a>
                         </div>
-                    </div>
-                    <div class="col-md-4 mb-5">
-                        <h5 class="text-secondary text-uppercase mb-4">Mi cuenta</h5>
-                        <div class="d-flex flex-column justify-content-start">
-                            <a class="text-secondary mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Inicio</a>
-                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Ajustes</a>
-                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Formas de pago</a>
-                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Localización de envio</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-5">
-                        <h5 class="text-secondary text-uppercase mb-4">Newsletter</h5>
-                        <p>Duo stet tempor ipsum sit amet magna ipsum tempor est</p>
-                        <form action="">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Your Email Address">
-                                <div class="input-group-append">
-                                    <button class="btn btn-primary">Sign Up</button>
-                                </div>
-                            </div>
-                        </form>
-                        <h6 class="text-secondary text-uppercase mt-4 mb-3">Follow Us</h6>
-                        <div class="d-flex">
-                            <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
+                    </div>                                  
                 </div>
             </div>
         </div>
