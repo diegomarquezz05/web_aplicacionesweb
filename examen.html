@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -107,13 +107,14 @@
                                 <a href="" class="dropdown-item">Ropa de Bebes</a>
                             </div>
                         </div>
-                        <a href="" class="nav-item nav-link">Camisetas</a>
-                        <a href="" class="nav-item nav-link">Vaqueros</a>
-                        <a href="" class="nav-item nav-link">Trajes de baño</a>
-                        <a href="" class="nav-item nav-link">Pijamas</a>
-                        <a href="" class="nav-item nav-link">Ropa deportiva</a>
-                        <a href="" class="nav-item nav-link">Chaquetas</a>
-                        <a href="" class="nav-item nav-link">Zapatos</a>
+                        <a href="shop.html" class="nav-item nav-link">Camisetas</a>
+                        <a href="shop.html" class="nav-item nav-link">Vaqueros</a>
+                        <a href="shop.html" class="nav-item nav-link">Trajes de baño</a>
+                        <a href="shop.html" class="nav-item nav-link">Pijamas</a>
+                        <a href="shop.html" class="nav-item nav-link">Ropa deportiva</a>
+                        <a href="shop.html" class="nav-item nav-link">Chaquetas</a>
+                        <a href="shop.html" class="nav-item nav-link">Zapatos</a>
+						<a href="detail.html" class="nav-item nav-link">Más detalles de nuestro producto estrella</a>
                     </div>
                 </nav>
             </div>
@@ -138,9 +139,9 @@
                                     <a href="checkout.html" class="dropdown-item">Formas de Pago</a>
                                 </div>
                             </div>
-                            <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
                             <a href="ordenada.html" class="nav-item nav-link">Lista ordenada y desordenada</a>
-                            <a href="examen.html" class="nav-item nav-link">Examen</a>
+                            <a href="examen.html" class="nav-item nav-link active">Examen</a>
                         </div>
                         <div class="navbar-nav ml-auto py-0 d-none d-lg-block">
                             <a href="" class="btn px-0">
@@ -159,92 +160,75 @@
     </div>
     <!-- Navbar End -->
 
-
     <!-- Breadcrumb Start -->
     <div class="container-fluid">
         <div class="row px-xl-5">
             <div class="col-12">
                 <nav class="breadcrumb bg-light mb-30">
-                    <a class="breadcrumb-item text-dark" href="#">Home</a>
-                    <span class="breadcrumb-item active">Contact</span>
+                    <a class="breadcrumb-item text-dark" href="index.html">Inicio</a>
+                    <span class="breadcrumb-item active">Examen</span>
                 </nav>
             </div>
         </div>
     </div>
     <!-- Breadcrumb End -->
 
-
-    <!-- Contact Start -->
-    <div class="container-fluid">
-        <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3">MANDA TU SUGERENCIA</span></h2>
-        <div class="row px-xl-5">
-            <div class="col-lg-7 mb-5">
-                <div class="contact-form bg-light p-30">
-                    <div id="success"></div>
-                    <form action="http://endor.josedomingo.org/josedom/resultado.php" method="post">
-                        <div class="control-group">
+    <!--Página Examen -->
+    <div class="col-lg-9 h-100">
+      <h1>Examen Diego Márquez Mejías</h1>
+    </div>
+    <div class="col-lg-9 col-md-8">
+                <div class="row pb-3">
+                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+                        <article>
+                            <h2>Lista ordenada</h2>
+                            <ol>
+                                <li>El primero</li>
+                                <li>El segundo</li>
+                                <li>El tercero</li>
+                                <li>El cuarto</li>
+                                <li>El quinto</li>
+                            </ol>
+                        </article>
+                   </div>
+                </div>
+    </div>
+    <div class="input-group">
+      <a href="index.html" title="Imagen del Proyecto 1"><img class="col-md-5 ml-lg-50 text-left" src="img/img-examen.png" alt=""></a>
+    </div>
+    <p>Un parrafo</p>
+    <table class="table caption">
+        <tr>
+        <th>Examen</th>
+        <th>Nombre</th>
+        <th>Edad</th>
+        </tr>
+        <tr>
+        <td>Aplicaciones Web</td>
+        <td>Diego</td>
+        <td>20</td>
+        </tr>
+    </table>
+    
+    <h2>Formulario</h2>
+            <form action="http://endor.josedomingo.org/josedom/resultado.php" method="post">
+                        <div>
                             <input type="text" class="form-control" name="nombre" placeholder="Tu nombre"
                                 required="required" data-validation-required-message="Por favor ingrese su nombre" />
                             <p class="help-block text-danger"></p>
                         </div>
-                        <div class="control-group">
-                            <input type="email" class="form-control" name="correo" placeholder="Tu Email"
-                                required="required" data-validation-required-message="Por favor ingrese su correo electronico" />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="control-group">
-                            <input type="text" class="form-control" name="nombre_producto" placeholder="Producto nombre"
-                                required="required" data-validation-required-message="Ingrese el nombre del producto" />
-                            <p class="help-block text-danger"></p>
-                        </div>
-						            <div class="control-group">
-                            <input type="text" class="form-control" name="numero" placeholder="Tu numero de telefono"
-                                required="required" data-validation-required-message="Por favor ingrese su telefono" />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="control-group">
-                            <input type="text" class="form-control" name="domicilio" placeholder="Tu numero domicilio"
-                                required="required" data-validation-required-message="Por favor ingrese su domicilio" />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="control-group">
-                            <div class="pr-3">
-                                <h2>Tipo de Venta</h2>
-                            </div>
+                        <div>
                             <input type="radio" value="check_ropa" name="checkout"/>Ropa<br/>
                             <input type="radio" value="check_objeto" name="checkout"/>Objeto<br/>
                             <input type="radio" value="check_informatica" name="checkout"/>Informatica<br/>
-                        </div>
-                        <div class="control-group">
-                            <div class="pr-3">
-                                <h2>Rango de Precio (0-1000€)</h2>
-                            </div>
-                            <input type="range" class="form-control" name="precio">
-                        </div>
+                        </div>            
                         <div>   
-                            <div class="pr-2">
-                                <h2>Porque quieres venderlo</h2>
-                            </div>
-                            <select name="Porque">
-                                <optgroup label="Porque">
-                                    <option>Necesidades</option>
-                                    <option>No me quedo bien</option>
-                                    <option>No me gusto</option>
-                                </optgroup>
-                            </select>   
-                        </div>             
-                        <div>   
-                            <button class="btn btn-primary py-2 px-4" type="submit" id="sendMessageButton">Mandar sugerencia</button>
-
+                            <button class="btn btn-primary py-2 px-4" type="submit" id="sendMessageButton">Mandar formulario</button>
                         </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Contact End -->
-
-
+            </form>
+          
+    <!-- Examen final -->
+    
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-secondary mt-5 pt-5">
         <div class="row px-xl-5 pt-5">
@@ -267,7 +251,8 @@
                             <a class="text-secondary mb-2" href="checkout.html"><i class="fa fa-angle-right mr-2"></i>Forma de pago</a>
                             <a class="text-secondary" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contacto</a>
                         </div>
-                    </div>                                  
+                    </div>
+                    
                 </div>
             </div>
         </div>
